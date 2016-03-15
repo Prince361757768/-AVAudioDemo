@@ -23,8 +23,11 @@
                                 <state key="normal" title="录音">
                                     <color key="titleColor" red="0.38431372549999998" green="0.83921568629999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="disabled" backgroundImage="Christmas27.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="62" y="344" width="118" height="60"/>
+                                    <rect key="frame" x="11" y="355" width="118" height="60"/>
                                 </variation>
                                 <connections>
                                     <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pT-zW-m4p"/>
@@ -37,28 +40,56 @@
                                     <color key="titleColor" red="0.99215686270000003" green="0.43921568630000002" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="223" y="344" width="126" height="61"/>
+                                    <rect key="frame" x="272" y="354" width="126" height="61"/>
                                 </variation>
                                 <connections>
                                     <action selector="playing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yey-Ua-GAn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KA-Pi-MKz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="暂停">
+                                    <color key="titleColor" red="1" green="1" blue="0.3587740385" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled" backgroundImage="Christmas27.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="355" width="118" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pauseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ3-oT-TJA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背景红色代表不能点击" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-0M-r1K">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.43921568630000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="243" width="237" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hEe-eK-WPT"/>
                                 <exclude reference="oSc-ji-rZ5"/>
+                                <exclude reference="5KA-Pi-MKz"/>
+                                <exclude reference="5Ga-0M-r1K"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="hEe-eK-WPT"/>
                                 <include reference="oSc-ji-rZ5"/>
+                                <include reference="5KA-Pi-MKz"/>
+                                <include reference="5Ga-0M-r1K"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="pauseBtn" destination="5KA-Pi-MKz" id="iyC-YA-4ps"/>
                         <outlet property="recordBtn" destination="hEe-eK-WPT" id="Iry-TB-3Ga"/>
                     </connections>
                 </viewController>
@@ -67,4 +98,7 @@
             <point key="canvasLocation" x="240" y="432.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Christmas27.png" width="459" height="267"/>
+    </resources>
 </document>

@@ -16,6 +16,7 @@
 		9352B7201C7F028C000789EF /* AVAudioDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9352B71F1C7F028C000789EF /* AVAudioDemoTests.m */; };
 		9352B72B1C7F028C000789EF /* AVAudioDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9352B72A1C7F028C000789EF /* AVAudioDemoUITests.m */; };
 		9352B7391C7F02CA000789EF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352B7381C7F02CA000789EF /* AVFoundation.framework */; };
+		93646E661C97FF4F00647FAB /* Christmas27.png in Resources */ = {isa = PBXBuildFile; fileRef = 93646E651C97FF4F00647FAB /* Christmas27.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9352B72A1C7F028C000789EF /* AVAudioDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVAudioDemoUITests.m; sourceTree = "<group>"; };
 		9352B72C1C7F028C000789EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9352B7381C7F02CA000789EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		93646E651C97FF4F00647FAB /* Christmas27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Christmas27.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				9352B7111C7F028C000789EF /* Assets.xcassets */,
 				9352B7131C7F028C000789EF /* LaunchScreen.storyboard */,
 				9352B7161C7F028C000789EF /* Info.plist */,
+				93646E651C97FF4F00647FAB /* Christmas27.png */,
 				9352B7051C7F028B000789EF /* Supporting Files */,
 			);
 			path = AVAudioDemo;
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9352B7151C7F028C000789EF /* LaunchScreen.storyboard in Resources */,
+				93646E661C97FF4F00647FAB /* Christmas27.png in Resources */,
 				9352B7121C7F028C000789EF /* Assets.xcassets in Resources */,
 				9352B7101C7F028C000789EF /* Main.storyboard in Resources */,
 			);
@@ -502,6 +506,7 @@
 				9352B7311C7F028C000789EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9352B7321C7F028C000789EF /* Build configuration list for PBXNativeTarget "AVAudioDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				9352B7341C7F028C000789EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9352B7351C7F028C000789EF /* Build configuration list for PBXNativeTarget "AVAudioDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +524,7 @@
 				9352B7371C7F028C000789EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
